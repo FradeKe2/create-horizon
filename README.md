@@ -96,6 +96,8 @@ cargo test --manifest-path mixins/create_horizon/kinetics/Cargo.toml
 - **23 tests du moteur** : lignes d'arbres, engrenages, rapports grande/petite roue, boîte de
   vitesses, casse en sens opposés et en survitesse, prise de contrôle par une source plus rapide,
   surcharge, manivelle, rechargement d'une sauvegarde. Ils passent tous, et clippy ne signale rien.
+- **4 tests du module de liaison**, lancés dans Horizon (NBT, paliers du moteur, bûches écorcées,
+  direction du regard) : ils passent.
 - **Compilation contre Horizon** (commit `183b53f`) : le mod est appliqué avec `tools/stage.py`, puis
   `cargo check -p horizon-client` passe sans erreur ni avertissement.
 - **Contenu** : le lecteur de contenu de Horizon (`horizon_mods::content`) accepte les 11 blocs,
