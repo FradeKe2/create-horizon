@@ -1,0 +1,15 @@
+{
+  "block.create.shaft": "Shaft",
+  "block.create.cogwheel": "Cogwheel",
+  "block.create.large_cogwheel": "Large Cogwheel",
+  "block.create.gearbox": "Gearbox",
+  "block.create.creative_motor": "Creative Motor",
+  "block.create.hand_crank": "Hand Crank",
+  "block.create.speedometer": "Speedometer",
+  "block.create.stressometer": "Stressometer",
+  "block.create.mechanical_press": "Mechanical Press",
+  "block.create.millstone": "Millstone",
+  "block.create.andesite_casing": "Andesite Casing",
+  "item.create.andesite_alloy": "Andesite Alloy",
+  "itemGroup.create.base": "Create"
+}

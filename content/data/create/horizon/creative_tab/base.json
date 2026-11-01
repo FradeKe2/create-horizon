@@ -1,0 +1,18 @@
+{
+  "title": "itemGroup.create.base",
+  "icon": "create:cogwheel",
+  "items": [
+    "create:andesite_alloy",
+    "create:andesite_casing",
+    "create:shaft",
+    "create:cogwheel",
+    "create:large_cogwheel",
+    "create:gearbox",
+    "create:hand_crank",
+    "create:creative_motor",
+    "create:speedometer",
+    "create:stressometer",
+    "create:mechanical_press",
+    "create:millstone"
+  ]
+}

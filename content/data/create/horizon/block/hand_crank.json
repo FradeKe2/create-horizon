@@ -1,0 +1,49 @@
+{
+  "template": "minecraft:conduit",
+  "properties": {
+    "hardness": 1.5,
+    "explosion_resistance": 6.0,
+    "sounds": "minecraft:oak_planks",
+    "light": 0,
+    "map_color": 13
+  },
+  "shapes": {
+    "property": "waterlogged",
+    "values": {
+      "false": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.875,
+          0.875,
+          0.875
+        ]
+      ],
+      "true": [
+        [
+          0.125,
+          0.125,
+          0.125,
+          0.875,
+          0.875,
+          0.875
+        ]
+      ]
+    }
+  },
+  "item": true,
+  "state_properties": {
+    "facing": {
+      "type": "enum",
+      "values": [
+        "up",
+        "down",
+        "north",
+        "south",
+        "west",
+        "east"
+      ]
+    }
+  }
+}

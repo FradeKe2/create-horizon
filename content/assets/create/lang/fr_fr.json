@@ -1,0 +1,15 @@
+{
+  "block.create.shaft": "Arbre de transmission",
+  "block.create.cogwheel": "Roue dent\u00e9e",
+  "block.create.large_cogwheel": "Grande roue dent\u00e9e",
+  "block.create.gearbox": "Bo\u00eete de vitesses",
+  "block.create.creative_motor": "Moteur cr\u00e9atif",
+  "block.create.hand_crank": "Manivelle",
+  "block.create.speedometer": "Compteur de vitesse",
+  "block.create.stressometer": "Compteur de stress",
+  "block.create.mechanical_press": "Presse m\u00e9canique",
+  "block.create.millstone": "Meule",
+  "block.create.andesite_casing": "Bo\u00eetier en and\u00e9site",
+  "item.create.andesite_alloy": "Alliage d'and\u00e9site",
+  "itemGroup.create.base": "Create"
+}

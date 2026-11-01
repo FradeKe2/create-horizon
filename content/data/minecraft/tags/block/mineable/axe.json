@@ -1,0 +1,12 @@
+{
+  "values": [
+    "create:cogwheel",
+    "create:large_cogwheel",
+    "create:gearbox",
+    "create:hand_crank",
+    "create:mechanical_press",
+    "create:speedometer",
+    "create:stressometer",
+    "create:andesite_casing"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=up": {
+      "model": "create:block/hand_crank"
+    },
+    "facing=down": {
+      "model": "create:block/hand_crank",
+      "x": 180
+    },
+    "facing=north": {
+      "model": "create:block/hand_crank",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "create:block/hand_crank",
+      "x": 90,
+      "y": 180
+    },
+    "facing=west": {
+      "model": "create:block/hand_crank",
+      "x": 90,
+      "y": 270
+    },
+    "facing=east": {
+      "model": "create:block/hand_crank",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

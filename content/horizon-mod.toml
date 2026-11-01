@@ -1,0 +1,8 @@
+id = "create"
+name = "Create"
+version = "0.1.0"
+description = "Create's blocks for Horizon: shafts, cogwheels, gearboxes, motors, cranks, gauges. Needs the create_horizon native mod for their kinetics."
+authors = ["Create for Horizon contributors"]
+api = "0.2"
+side = "both"
+capabilities = ["registries"]

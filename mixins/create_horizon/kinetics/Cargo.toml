@@ -1,0 +1,11 @@
+[package]
+name = "create_kinetics"
+version = "0.1.0"
+edition = "2024"
+description = "Create's kinetic system (rotation propagation, stress networks, generators) ported to Rust for Horizon"
+license = "MIT"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=y": {
+      "model": "create:block/speedometer"
+    },
+    "axis=x": {
+      "model": "create:block/speedometer",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z": {
+      "model": "create:block/speedometer",
+      "x": 90
+    }
+  }
+}

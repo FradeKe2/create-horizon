@@ -1,0 +1,36 @@
+{
+  "template": "minecraft:conduit",
+  "properties": {
+    "hardness": 2.0,
+    "explosion_resistance": 6.0,
+    "sounds": "minecraft:stone",
+    "light": 0,
+    "map_color": 11
+  },
+  "shapes": {
+    "property": "waterlogged",
+    "values": {
+      "false": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "true": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "item": true
+}
