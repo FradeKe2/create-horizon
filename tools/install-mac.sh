@@ -54,15 +54,22 @@ fi
 [ -d "$GAME" ] || die "instance introuvable : $GAME"
 say "Instance : $INSTANCE ($GAME)"
 
-# 3. The mod's files.
-say "Téléchargement de Create pour Horizon..."
-tmp="$(mktemp -d)"
-curl -fsSL "https://github.com/$REPO/archive/refs/heads/main.tar.gz" -o "$tmp/src.tar.gz" \
-  || die "téléchargement impossible (le dépôt $REPO doit être public)."
-rm -rf "$SRC"
-mkdir -p "$SRC"
-tar -xzf "$tmp/src.tar.gz" -C "$SRC" --strip-components 1
-rm -rf "$tmp"
+# 3. The mod's files: the folder this script is in (a downloaded copy of the
+# repository), else a fresh download.
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" 2>/dev/null && pwd || true)"
+if [ -n "$HERE" ] && [ -d "$HERE/../content" ] && [ -d "$HERE/../mixins/create_horizon" ]; then
+  SRC="$(cd "$HERE/.." && pwd)"
+  say "Fichiers du mod : $SRC"
+else
+  say "Téléchargement de Create pour Horizon..."
+  tmp="$(mktemp -d)"
+  curl -fsSL "https://github.com/$REPO/archive/refs/heads/main.tar.gz" -o "$tmp/src.tar.gz" \
+    || die "téléchargement impossible. Télécharge le ZIP depuis https://github.com/$REPO (bouton Code > Download ZIP), puis lance : bash ~/Downloads/create-horizon-main/tools/install-mac.sh"
+  rm -rf "$SRC"
+  mkdir -p "$SRC"
+  tar -xzf "$tmp/src.tar.gz" -C "$SRC" --strip-components 1
+  rm -rf "$tmp"
+fi
 
 # 4. The content mod: horizon-mods/create, turned on.
 say "Installation du mod de contenu (blocs et objets)..."
